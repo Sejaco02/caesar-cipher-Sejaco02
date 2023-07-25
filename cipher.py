@@ -12,6 +12,9 @@ translate_me = input("Please enter statement to be encrypted? ")
 encryption = str()
 
 for char in translate_me:
-    encryption += (cipher_dictionary.get(char.lower(),char))
+    if char.isupper():
+        encryption += ((cipher_dictionary.get(char.lower(),char))).upper()
+    else:
+       encryption += (cipher_dictionary.get(char.lower(),char))
 
 print("Encrypted statement:", encryption)
