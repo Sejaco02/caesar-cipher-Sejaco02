@@ -16,4 +16,4 @@ for char in translate_me:
 
        encryption += (cipher_dictionary.get(char.lower(),char))
 
-print("Encrypted statement:", encryption)
+print("The encrypted sentence is:", encryption)
