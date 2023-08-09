@@ -13,9 +13,7 @@ encryption = str()
 
 # run encryption and print output
 for char in translate_me:
-    if char.isupper():
-        encryption += ((cipher_dictionary.get(char.lower(),char))).upper()
-    else:
+
        encryption += (cipher_dictionary.get(char.lower(),char))
 
 print("Encrypted statement:", encryption)
